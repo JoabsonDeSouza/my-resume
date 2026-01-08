@@ -1,4 +1,4 @@
-# HTML Resume (A4) — Joabson de Souza
+# HTML Resume (A4)
 
 This repository contains my resume built in **HTML + CSS**, designed to be:
 
@@ -15,12 +15,6 @@ This layout follows common ATS (Applicant Tracking System) best practices:
 - Keyword-dense but readable content (optimized for tech job descriptions)
 - Links and contact information kept as plain text + standard anchors
 - Print rules to avoid awkward breaks (e.g., preventing lists/roles from splitting mid-section)
-
-## Preview
-
-A preview screenshot of the rendered resume is available in the project root:
-
-- `result.png`
 
 ## Files
 
@@ -45,21 +39,29 @@ Just open `index.html` (or `index_ptbr.html`) in your browser.
 
 ## Manual page breaks (optional)
 
-You can force a new page by inserting:
-```html
+You can force a new page by inserting this element in the HTML:
+
 <div class="page-break"></div>
 
 The stylesheet includes print rules using:
-	•	break-before / page-break-before
-	•	break-inside / page-break-inside
+
+- break-before / page-break-before
+- break-inside / page-break-inside
 
 to reduce mid-list breaks and keep roles/sections more intact.
 
-Customize
-	•	Update content in the HTML files (index.html / index_ptbr.html)
-	•	Adjust typography/spacing in styles.css
-	•	Keep both HTML files pointing to the same styles.css so the layout stays consistent.
+## Customize
 
-License
+- Update content in the HTML files (index.html / index_ptbr.html)
+- Adjust typography/spacing in styles.css
+- Keep both HTML files pointing to the same styles.css so the layout stays consistent.
+
+## License
 
 Personal use. Feel free to fork and adapt.
+
+## Preview
+
+A preview screenshot of the rendered resume is available in the project root:
+
+![Resume preview](result.png)
